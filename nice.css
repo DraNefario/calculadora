@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pai{
+    width: 450px;
+    height: 500px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.cabeca{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.boton{
+    width: 400px;
+    height: 300px;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+button{
+    width: 85px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 5px;
+
+}
+
+.button0{
+    width: 170px;
+    background-color: #ffe204;
+}
+
+.amarelo{
+    background-color: #ffe204;
+}
+
+.d{
+    background-color: #ccc;
+}
+
+.amarelo:hover{
+    background-color: #ffee6a;
+}
+
+.d:hover{
+    background-color: #eaeaea;
+}
