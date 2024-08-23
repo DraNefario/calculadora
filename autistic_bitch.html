@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="nice.css">
+    <script type="text/javascript" defer src="nice.js"></script>
 </head>
 <body>
     <div class="pai">
         <div class="cabeca">
-            <input type="text" id="visor" class="visor" disabled>
+            <div class="display">
+                 <input type="text" id="visor" class="visor" readonly>
+                 <button class="backspace" onclick="backspace()">&#9003;</button>
+            </div>
             <div class="boton">
-                <button class="d" value="1">1</button>
-                <button class="d" value="2">2</button>
-                <button class="d" value="3">3</button>
-                <button class="amarelo" value="/">%</button>
-                <button class="d" value="4">4</button>
-                <button class="d" value="5">5</button>
-                <button class="d" value="6">6</button>
-                <button class="amarelo" value="*">X</button>
-                <button class="d" value="7">7</button>
-                <button class="d" value="8">8</button>
-                <button class="d" value="9">9</button>
-                <button class="amarelo" value="-">-</button>
-                <button class="button0" class="amarelo" value="0">0</button>
-                <button class="amarelo" value="=">=</button>
-                <button class="amarelo" value="+">+</button>
+                <button class="d" onclick="appendToVisor('1')">1</button>
+                <button class="d" onclick="appendToVisor('2')">2</button>
+                <button class="d" onclick="appendToVisor('3')">3</button>
+                <button class="amarelo" onclick="appendToVisor('/')">/</button>
+                <button class="d" onclick="appendToVisor('4')">4</button>
+                <button class="d" onclick="appendToVisor('5')">5</button>
+                <button class="d" onclick="appendToVisor('6')">6</button>
+                <button class="amarelo" onclick="appendToVisor('*')">X</button>
+                <button class="d" onclick="appendToVisor('7')">7</button>
+                <button class="d" onclick="appendToVisor('8')">8</button>
+                <button class="d" onclick="appendToVisor('9')">9</button>
+                <button class="amarelo" onclick="appendToVisor('-')">-</button>
+                <button class="button0 amarelo" onclick="appendToVisor('0')">0</button>
+                <button class="amarelo" onclick="calculate()">=</button>
+                <button class="amarelo" onclick="appendToVisor('+')">+</button>
             </div>
         </div>
     </div>   
-    <script>
-
-    </script>
 </body>
 </html>
